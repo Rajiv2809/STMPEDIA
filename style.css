@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:ital,wght@0,300;0,400;0,600;1,500&family=Ubuntu:wght@400;500;700&display=swap');
+
+
 :root{
     --darkblue: #053B50;
     --blue: #176B87 ;
@@ -8,7 +11,7 @@
 
 body{
     background-color: var(--white);
-}
+} 
 
 
 
@@ -18,6 +21,7 @@ body{
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    
 }
 
 .nav-item a{
@@ -82,7 +86,7 @@ body{
     box-shadow: none;
 }
 .main{
-    background-image: url(/img/bernin-uben-OTzISrtVmVc-unsplash.jpg);
+    background-image: url(./img/bernin-uben-OTzISrtVmVc-unsplash.jpg);
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -148,6 +152,7 @@ body{
 
 .product{
 	height: fit-content;
+    background-color: var(--white);
 }
 .button-item{
 	background-color: #053B50;
@@ -393,7 +398,9 @@ body{
 @media (max-width: 400px) {
     .card-product{
         width: 100rem;
+
     }
+    
     
 }
 .bi-facebook{
@@ -421,9 +428,10 @@ footer{
     background: var(--darkblue);
     height: auto;
     width: 100%;
-    font-family: "Open Sans";
+    
     padding-top: 40px;
     color: #fff;
+    
 }
 .footer-content{
     display: flex;
@@ -489,4 +497,16 @@ footer{
     
     font-weight: 200;
     color: var(--lightblue);
+}
+
+@media (max-width: 500px) {
+    td {
+        font-size: 12px;
+    }
+    td .img-cart img{
+        width: 80px;
+    }
+    .head-cart th{
+        font-size: 16px;
+    }
 }

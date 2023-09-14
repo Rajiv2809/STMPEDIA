@@ -1,4 +1,4 @@
-// Create an IntersectionObserver instance
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry);
@@ -10,8 +10,11 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-// Select hidden elements and observe them
+
 const hiddenElements = document.querySelectorAll('.hidden, .animated, .aboutimg, .barang');
 hiddenElements.forEach((el) => {
     observer.observe(el); 
+});
+document.getElementById("payment").addEventListener("click", function() {
+    window.location.href = "payment.html";
 });
